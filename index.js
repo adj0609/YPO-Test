@@ -1,8 +1,9 @@
-const colors = ["green", "red", "yellow"];
-const index = 0;
-
-document.querySelector("#submit").addEventListener("click", () => {
-  if(index > colors.length - 1)
-    index = 0;
-  document.body.style.backgroundColor = colors[index++];  
+let button = document.querySelector("#button2");//select your button
+button.addEventListener('click',function(){//handle click event
+document.querySelector("#box1").style.backgroundColor="Blue";//select box id and set background
 });
+
+
+
+
+
