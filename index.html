@@ -4,18 +4,69 @@
 </head>
 <body>
 <header>YPO Challenge</header>
-<p>Press buttons and you will change to that color</p>
-<button class="ShowAll" button id="button2">SHOW ALL</button>
-<button class="Green">Green</button>
-<button class="Red">Red</button>
-<button class="Yellow">Yellow</button>
+<p>Press the button of your choice and you will see only that color</p>
+<button class="ShowAll" id="showAll">SHOW ALL</button>
+<button class="Green" id="green">Green</button>
+<button class="Red" id="red">Red</button>
+<button class="Yellow" id="yellow">Yellow</button>
 <p>
-<div class="box1" box id="ShowAllBox">ShowAll</div>
-<div class="box2">Green</div>
-<div class="box3">Red</div>
-<div class="box4">Yellow</div>
+
+
+
+<div class="box2" id="box2">Green</div>
+<div class="box3" id="box3">Red</div>
+<div class="box4" id="box4">Yellow</div>
 </p>
+<script language="JavaScript">
+document.getElementById ("green").addEventListener("click",()=>{
+  document.getElementById ('red').style.display = 'none'
+  document.getElementById ('yellow').style.display = 'none'
+  document.getElementById ('box3').style.display = 'none'
+ document.getElementById ('box4').style.display = 'none'
+  console.log("working")
+})
+
+document.getElementById ("red").addEventListener("click",()=>{
+  document.getElementById ('green').style.display = 'none'
+  document.getElementById ('yellow').style.display = 'none'
+  document.getElementById ('box2').style.display = 'none'
+ document.getElementById ('box4').style.display = 'none'
+  console.log("working")
+})
+
+document.getElementById ("yellow").addEventListener("click",()=>{
+  document.getElementById ('red').style.display = 'none'
+  document.getElementById ('green').style.display = 'none'
+  document.getElementById ('box2').style.display = 'none'
+ document.getElementById ('box3').style.display = 'none'
+  console.log("working")
+})
+document.getElementById ('showAll').addEventListener('click',()=>{
+  document.getElementById ('red').style.display = ''
+  document.getElementById ('yellow').style.display = ''
+  document.getElementById ('green').style.display = ''
+  console.log('working2')
+})
+
+document.getElementById ('showAll').addEventListener('click',()=>{
+  document.getElementById ('box2').style.display = ''
+  document.getElementById ('box3').style.display = ''
+  document.getElementById ('box4').style.display = ''
+  console.log('working3')
+})
+
+
+
+
+
+
+
+
+
+
+ 
+  </script>
 
 </body>
-<script type="text/javascript" src="script.js"></script>
+
 </html>
